@@ -1,0 +1,30 @@
+
+import { featuredSkills } from "../contentFiles/skillSets"
+
+
+
+export default function FeaturedSkills(){
+
+
+    return (
+        <>
+        <div className='bg-orange-950/20  items-center justify-center text-center md:p-10 shadow-xl p-10'>
+        <h1 className='underline'>Featured Skills</h1>
+            <ul className='grid grid-rows-1 grid-cols-4 md:mt-10 gap-2 p-5 ' >
+                {featuredSkills.map((set , i) => (
+                    <li key={i} className=' hover:bg-black/20 p-2  lg:p-10 item-center rounded shadow-lg f' >
+                       
+                        <div className='lg:w-30 lg:h-30 h-10 w-10 '>
+                        
+                            <img src={set.imgLink}/>
+                            <h3>{set.skillName}</h3>
+                        </div>
+                    </li>
+                ))}
+            </ul>
+        </div>
+        </>
+    )
+}
+
+
