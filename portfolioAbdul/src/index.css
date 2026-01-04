@@ -1,2 +1,45 @@
 @import "tailwindcss";
 
+
+@keyframes slideUpManual {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes EaseIN{
+    0%{
+        opacity:0;
+        transform:scale(90%)
+    }
+    100%{
+        opacity:100%;
+        transform:scale(100%);
+    }
+  }
+  .slide-up {
+    animation: slideUpManual 1s ease-out backwards;
+  }
+
+  .easer{
+    animation: EaseIN 0.4s ease-in backwards;
+  }
+  
+  @keyframes slideDownManual {
+    0% {
+      transform:matrix(20%);
+      opacity: 0;
+    }
+    100% {
+      transform: matrix(100%);
+      opacity: 1;
+    }
+  }
+  .slide-down{
+    animation: slideDownManual 1s ease-in forwards;
+  }

@@ -4,7 +4,7 @@ export default function Academic_Details({ collegeName , universityName , batch 
 
     return (
         <>
-        <div  className= 'flex items-center justify-center gap-10 py-5 '>
+        <div  className= 'flex items-center justify-center gap-10 py-5  '>
 
 <div >
     <img  src={collegeImg}  className=' h-10 lg:h-20'/>
