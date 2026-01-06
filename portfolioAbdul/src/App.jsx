@@ -17,7 +17,7 @@ export default function App(){
   return(
     <>
     <div className="  bg-gradient-to-r  from-amber-800 to-purple-600  min-h-screen w-screen  text-center  items-center 
-    bg-cover bg-[url('./assets/img2/bgImg.jpg')] font-bold ">  
+    bg-cover bg-[url('./assets/img2/bgImg.jpg')] font-bold  font-sans-serif">  
       <Header/>
       <Hero/>
       <AcademicSection/>
