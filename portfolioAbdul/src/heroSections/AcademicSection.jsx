@@ -15,7 +15,7 @@ export default function AcademicSection(){
            batch = "2022 - 2026"
            degreeName = "B.E. Computer Science and Engineering"
            collegeImg={nellaiCollegeLogo}  universityImg={annaUniversitySvg}
-           
+           passOut='2026'
            /> 
         </div>
         </>

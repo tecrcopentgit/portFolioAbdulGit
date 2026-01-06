@@ -1,7 +1,7 @@
 
 
 
-export default function ProfileSection({ img , name , degree , role }){
+export default function ProfileSection({ img , name , degree , role , active }){
     return (
         <>
         <div className='bg-gradient-to-tl from-purple-500/40 to-violet-950 flex flex-col w-screen md:flex-col  md:w-fit md:flex-row items-center gap-5 py-10 md:p-10 text-center font-thin rounded '>
@@ -11,6 +11,7 @@ export default function ProfileSection({ img , name , degree , role }){
              <h2>{name}</h2>
         <span>{degree}</span>
         <p >{role}</p>
+        <p >{`(${active})`}</p>
         </div>
         
         

@@ -1,6 +1,6 @@
 
 
-export default function Academic_Details({ collegeName , universityName , batch , degreeName , collegeImg , universityImg }){
+export default function Academic_Details({ collegeName , universityName , batch , degreeName , collegeImg , universityImg , passOut}){
 
     return (
         <>
@@ -17,6 +17,7 @@ export default function Academic_Details({ collegeName , universityName , batch 
     <img  src={universityImg} className='h-20 md:pl-30 px-5'/>
     <h2>{universityName}</h2>
     <p>{degreeName} {batch}</p>
+    <p>Year of Passout:{passOut}</p>
     
 </div>
 
