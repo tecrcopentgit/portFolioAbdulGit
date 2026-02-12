@@ -23,14 +23,14 @@ export default function CommunicationSection(){
 return(
     <>
     
-    <div className=' bg-black/30 w-screen py-15 lg:p-10 'id='Contact'>
-    <h1 className='underline'>Available in..</h1>
+    <div className=' bg-black/30 w-screen py-15 lg:p-10 'id='Contact' >
+    <h1 className='underline' data-aos='fade-up'>Available in..</h1>
     <div className='flex justify-center'>
 <ul className=' grid md:grid-cols-4 grid-cols-2 gap-15 lg:gap-40 mt-10'>
     {contactComponents.map((comp , i) =>(
         <a href={comp.refer} key={i}>
-    <li key={i} data-aos='zoom-in' >
-<img src={comp.imgLink}   className='h-12 w-12 lg:h-40 lg:w-40 mx-10'/> 
+    <li key={i} data-aos='zoom-in'className='' >
+<img src={comp.imgLink}   className='h-12 w-12 lg:h-40 lg:w-40 mx-10 hover:h-11 hover:w-11 lg:hover:h-39 lg:hover:w-39'/> 
 <h3>{comp.comName}</h3> 
 
 

@@ -12,8 +12,11 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
     "aos": "^2.3.4",
+    "lucide-react": "^0.563.0",
+    "pdfjs": "^2.5.4",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-pdf": "^10.3.0",
     "tailwindcss": "^4.1.18"
   },
   "devDependencies": {

@@ -19,6 +19,7 @@ export const skillsets = [
     {skillName:'Back-End' , imgLink:backEndSvg , isFeatured:false},
     {skillName:'DataBase   ' , imgLink:dataBaseSvg, isFeatured:false},
     
+    
 ];
 
 export var featuredSkills = [];

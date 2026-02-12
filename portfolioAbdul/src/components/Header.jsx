@@ -52,17 +52,17 @@ export default function Header(){
     return (
 
         <>
-        <div className={`${headerFixed ? "fixed  " : "relative"} bg-gradient-to-br from-amber-900/90 to-purple-950/50 p-5 w-full slide-down z-100  hidden md:block text-white `} ref={headerRef}>
+        <div className={`${headerFixed ? "fixed  " : "relative"} bg-gradient-to-r from-pink-900 to-lime-950 p-5 w-full slide-down z-100  hidden md:block text-white slide-down`} ref={headerRef}>
            <ul className='justify-center flex flex-row gap-10'>
             {headerContent.map((item , i) => ( 
-                <li key= {i} ><button onClick={() => {sectionClick(item)}}>{item}</button></li>
+                <li key= {i} data-aos='slide-down' ><button onClick={() => {sectionClick(item)}}>{item}</button></li>
             ))}
            </ul>
             
         </div>
         <div className={`${headerFixed ? "fixed  " : "relative"} top-0 fixed-0  block md:hidden z-100 text-amber-100`}>
             
-            <div className={`${mobile} bg-gradient-to-bl from-red-900/50 to-purple-800/50 slide-down`} >
+            <div className={`${mobile} bg-gradient-to-br from-red-900/90 to-purple-950/50 slide-down`} >
              <ul className='flex flex-row justify-end gap-5 p-5 '  ref={headerRef}>
                 {headerContent.map((i) => (<li key={i}> <button onClick={() => {sectionClick(i)}}>{i}</button></li>
             ))}</ul></div>
